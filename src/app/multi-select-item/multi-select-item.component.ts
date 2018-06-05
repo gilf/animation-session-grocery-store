@@ -14,7 +14,8 @@ export class MultiSelectItemComponent implements OnDestroy {
   constructor(private tmManager: TimelineManagerService) { }
 
   ngOnDestroy() {
-     this.itemDestroyed.emit();
+    this.itemDestroyed.emit();
+    this.itemDestroyed.complete();
   }
 
   select(evt, item) {

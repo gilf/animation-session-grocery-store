@@ -1,0 +1,11 @@
+<div class="multiSelect">
+  <ul class="selection">
+    <app-multi-select-selected-item *ngFor="let item of selectedItems" [item]="item" ></app-multi-select-selected-item>
+  </ul>
+
+  <ul class="optionList" #optionList>
+    <app-multi-select-item *ngFor="let item of items; let i = index" [item]="item"
+                           (itemDestroyed)="resetAfterItemRemoved(i)"
+                           (addNewItem)="addNewItem($event)"></app-multi-select-item>
+  </ul>
+</div>

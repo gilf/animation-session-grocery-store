@@ -1,0 +1,45 @@
+:host {
+  li {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 72px;
+    line-height: 72px;
+
+    margin: 0;
+    background: white;
+    color: #3d2f59;
+    overflow: hidden;
+
+    transition: background 0.12s ease-in, color 0.12s ease-in;
+
+    .caption{
+      position: relative;
+      padding-left: 57px;
+      z-index: 50;
+    }
+
+    .activeBackground{
+      pointer-events: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      opacity: 0;
+      z-index: 1;
+
+      display: block;
+      background: #440000;
+      width: 500px;
+      height: 500px;
+      clip-path: circle(50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover {
+      background: #a00000;
+      color: white;
+    }
+
+
+  }
+}

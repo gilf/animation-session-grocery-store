@@ -1,0 +1,3 @@
+<ul id="ulGroceryList">
+  <app-grocery-item *ngFor="let item of items" [item]="item" (deleteItem)="delete(item)"></app-grocery-item>
+</ul>

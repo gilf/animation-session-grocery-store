@@ -1,0 +1,26 @@
+
+li {
+  width: 300px;
+  height: 40px;
+  display: block;
+  border-bottom: solid;
+  border-width: 1px;
+  padding-top: 20px;
+}
+
+li div {
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+li div:first-child {
+  float: left;
+}
+
+.delete {
+  background-image: url('/assets/images/remove.png');
+  width: 43px;
+  height: 43px;
+  float: right;
+  margin-top: -5px;
+}

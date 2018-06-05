@@ -45,7 +45,6 @@ export class MultiSelectComponent implements AfterViewInit {
 
   resetAfterItemRemoved(itemIndex) {
     const tl = new TimelineMax();
-    console.log('item index:', itemIndex);
     const nextSiblings = this.optionList.nativeElement.querySelectorAll(`app-multi-select-item:nth-child(${itemIndex}) ~ app-multi-select-item li`);
     if (nextSiblings) {
       tl.set(nextSiblings, {y: 0});

@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eef0f5;
+}
+
+h1 {
+  font-family: Segoe,sans-serif,Arial;
+  color: white;
+}
+
+h2 {
+  font-family: Segoe,sans-serif,Arial;
+  color: white;
+  padding-top:5px;
+}
+
+ul.selection li {
+  color: #2f2346;
+  padding: 9px 15px;
+  border-radius: 13px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 16px; }
+ul.selection li .caption {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 3px; }
+ul.selection li button {
+  position: relative;
+  top: 3px;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  margin-left: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAABsUlEQVQokVXSwWoTQRzH8e/szGyyaUISEpBosfGgSEsvgg0o8RQDHjz4Rj6Fr9AnkGLQgoQiVQT1ECk2JcSWpGKttevuZncm4yGE4v8Bvvz58BPjg79u780+NizQfbZFvSkAsG6Och6TQ8P7vQGxOePh43vIrfXO89NDiZ6t8u3rMdeqdUoVgfQEw0+Gd6/GnB4Zsijgx9kRCqCs1/BVkTSGfm9EmyYAX97+Ij6XVIoNQnsCgJgeWLezPUBkFTQBABkx+YLGRgpfVwnj7wRVy/0nq4h5MneTgaPfG2Evy2jKJCYFIK/zZO4cWbqg3W1yfcPDEzlB445Hu9skIwZAeTmCIE+SJciCod1t0tj0SDF4JpsjNItiQZOYFJ0TuGzOf2cdWkq8pcb+65/YSLGykieOk0VA+dhI0e+NmAwcJAIx/DxzH3aOic8lvioCIAtmEY3UFUIp5dHTm4jtF7vuz7hGUd4gNSHlWkCrUwcWxMmljyYgNSG6NsVbvhjaE4KqpdWp01i/gnD6N6kJScUFshghltMIVI3N1l1ubWgya/F9hZs5pkPL7suPFCsBtx+s8Q9ZTb8SIbO5PAAAAABJRU5ErkJggg==");
+}
+ul.selection li .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #940000;
+  border-radius: 9px;
+}
+
+
